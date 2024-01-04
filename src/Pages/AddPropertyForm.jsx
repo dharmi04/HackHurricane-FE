@@ -60,95 +60,123 @@ const AddPropertyForm = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Property Type:
-        <input
-          type="text"
-          name="PropertyType"
-          value={propertyData.PropertyType}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
+    <div>
 
-      <label>
-        Location:
-        <input
-          type="text"
-          name="Location"
-          value={propertyData.Location}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
+      <h2 className='text-center text-5xl font-mono bg-accent'>Add Property</h2>
+      <form onSubmit={handleSubmit} className='bg-accent text-white p-4 rounded'>
+  <div className="form-group mb-4">
+    <label className="block text-sm mb-1">
+      Property Type:
+      <input
+        type="text"
+        name="PropertyType"
+        value={propertyData.PropertyType}
+        onChange={handleChange}
+        className="block w-full p-2 border bg-transparent rounded mt-1"
+      />
+    </label>
+  </div>
 
-      <label>
-        Area:
-        <input
-          type="text"
-          name="Area"
-          value={propertyData.Area}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
+  <div className="form-group mb-4">
+    <label className="block text-sm mb-1">
+      Location:
+      <input
+        type="text"
+        name="Location"
+        value={propertyData.Location}
+        onChange={handleChange}
+        className="block w-full p-2 border bg-transparent rounded mt-1"
+      />
+    </label>
+  </div>
 
-      <label>
-        Price:
-        <input
-          type="text"
-          name="Price"
-          value={propertyData.Price}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
+  <div className="form-group mb-4">
+    <label className="block text-sm mb-1">
+      Area:
+      <input
+        type="text"
+        name="Area"
+        value={propertyData.Area}
+        onChange={handleChange}
+        className="block w-full p-2 border  bg-transparent rounded mt-1"
+      />
+    </label>
+  </div>
 
-      <label>
-        Description:
-        <input
-          type="text"
-          name="Description"
-          value={propertyData.Description}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
+  <div className="form-group mb-4">
+    <label className="block text-sm mb-1">
+      Price:
+      <input
+        type="text"
+        name="Price"
+        value={propertyData.Price}
+        onChange={handleChange}
+        className="block w-full p-2 border bg-transparent rounded mt-1"
+      />
+    </label>
+  </div>
 
-      <label>
-        Phone Number:
-        <input
-          type="text"
-          name="PhoneNumber"
-          value={propertyData.PhoneNumber}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
+  <div className="form-group mb-4">
+    <label className="block text-sm mb-1">
+      Description:
+      <input
+        type="text"
+        name="Description"
+        value={propertyData.Description}
+        onChange={handleChange}
+        className="block w-full p-2 border bg-transparent rounded mt-1"
+      />
+    </label>
+  </div>
 
-      <label>
-        Email:
-        <input
-          type="text"
-          name="Email"
-          value={propertyData.Email}
-          onChange={handleChange}
-        />
-      </label>
+  <div className="form-group mb-4">
+    <label className="block text-sm mb-1">
+      Phone Number:
+      <input
+        type="text"
+        name="PhoneNumber"
+        value={propertyData.PhoneNumber}
+        onChange={handleChange}
+        className="block w-full bg-transparent p-2 border rounded mt-1"
+      />
+    </label>
+  </div>
 
-      <br />
-<label>
-        Image:
-        <input
-          type="file"
-          accept="image/*"
-          name="image"
-          onChange={handleImageChange}
-        />
-      </label>
-      <button type="submit">Add Property</button>
-    </form>
+  <div className="form-group mb-4">
+    <label className="block text-sm mb-1">
+      Email:
+      <input
+        type="text"
+        name="Email"
+        value={propertyData.Email}
+        onChange={handleChange}
+        className="block w-full bg-transparent p-2 border rounded mt-1"
+      />
+    </label>
+  </div>
+
+  <div className="form-group mb-4">
+    <label className="block text-sm mb-1">
+      Image:
+      <input
+        type="file"
+        accept="image/*"
+        name="image"
+        onChange={handleImageChange}
+        className="block w-full p-2 border rounded mt-1"
+      />
+    </label>
+  </div>
+
+  <div className="form-group">
+    <button type="submit" className="bg-white text-accent px-4 py-2 rounded">
+      Add Property
+    </button>
+  </div>
+</form>
+
+
+    </div>
   );
 };
 
