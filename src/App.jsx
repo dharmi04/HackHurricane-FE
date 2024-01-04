@@ -9,6 +9,9 @@ import { GetStartedLogin } from './Pages/GetStartedlogin'
 import Home from "./Pages/Home"
 import LandingPage from "./Pages/LandingPage"
 import PropertyDetails from "./Pages/PropertyDetails"
+//import SubscriptionComponent from "./Components/SubscriptionComponent"
+import Subscription from "./Pages/Subscription"
+import AddPropertyForm from "./Pages/AddPropertyForm"
 
 function App() {
 
@@ -25,6 +28,8 @@ function App() {
             element={<GetStartedRegistration />}
           />
           <Route path="/property/:id" element={<PropertyDetails />} />
+          <Route path="/subscription" element={<Subscription />} />
+          <Route path="/addproperty" element={<AddPropertyForm />} />
         </Routes>
       </Router>
 

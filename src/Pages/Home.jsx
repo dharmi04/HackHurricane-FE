@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`${API_URL}/sell`);
+        const response = await axios.get(`${API_URL}/`);
         setAllProducts(response.data);
       } catch (error) {
         console.error(error);
