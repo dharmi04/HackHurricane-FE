@@ -8,6 +8,7 @@ import { GetStartedRegistration } from './Pages/GetStartedRegistration'
 import { GetStartedLogin } from './Pages/GetStartedlogin'
 import Home from "./Pages/Home"
 import LandingPage from "./Pages/LandingPage"
+import PropertyDetails from "./Pages/PropertyDetails"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             path="/auth/get-started/register"
             element={<GetStartedRegistration />}
           />
+          <Route path="/property/:id" element={<PropertyDetails />} />
         </Routes>
       </Router>
 
