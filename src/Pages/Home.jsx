@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(API_URL); // Updated API URL directly
+        const response = await axios.get(`${API_URL}`);
         setAllProducts(response.data);
       } catch (error) {
         console.error(error);
