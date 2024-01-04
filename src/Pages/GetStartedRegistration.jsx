@@ -20,7 +20,7 @@ export const GetStartedRegistration = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="mb-10 font-sans">
-            <h1 className="text-secondary text-5xl font-serif">
+            <h1 className="text-black text-5xl font-serif">
             Elevate your real estates excellence
             </h1>
             <p className="text-gray-700 mt-2 text-lg">
