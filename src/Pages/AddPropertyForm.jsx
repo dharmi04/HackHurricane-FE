@@ -60,9 +60,9 @@ const AddPropertyForm = () => {
     }
   };
   return (
-    <div>
+    <div style={{ backgroundColor: '#603808' }}>
 
-      <h2 className='text-center text-5xl font-mono bg-accent'>Add Property</h2>
+      <h2 className='text-center text-5xl text-white font-mono bg-accent'>Add Property</h2>
       <form onSubmit={handleSubmit} className='bg-accent text-white p-4 rounded'>
   <div className="form-group mb-4">
     <label className="block text-sm mb-1">
